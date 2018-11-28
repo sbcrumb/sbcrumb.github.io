@@ -2,12 +2,12 @@ $(document).ready(function () {
 	var config = {
 		uptimerobot: {
 			api_keys: [
-				'm779828614-2b8e76a1f638f179db6f01be',
-				'm779757287-11996787b4a4ddb79cae343b',
-				'm779757278-82acbbedc86d26ebbc129945',
-				'm779762016-33deea24d6a3e73e524d8ab0',
-				'm779870719-a710902a0c001a03244eac5e',
-				'm779870718-eada06ba00200d8ced148b37'
+				'm781387016-b63095074195e998a7b469e5',
+				'',
+				'',
+				'',
+				'',
+				''
 			],
 			logs: 1,
 			response_times: 1,
@@ -17,7 +17,7 @@ $(document).ready(function () {
 			response_times_warning: 1500,
 		},
 		github: {
-			org: '1activegeek',
+			org: 'sbcrumb',
 			repo: 'status'
 		},
 		theme: 'dark'
@@ -28,7 +28,7 @@ $(document).ready(function () {
 		 stylesheet.setAttribute('href', url);
 	}
 
-	if (config.theme == 'light') {
+	if (config.theme == 'dark') {
 		setStyleSheet('style-light.css');
 	}
 
