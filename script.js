@@ -29,7 +29,7 @@ $(document).ready(function () {
 	}
 
 	if (config.theme == 'dark') {
-		setStyleSheet('style-light.css');
+		setStyleSheet('style-dark.css');
 	}
 
 	const status_text = {
