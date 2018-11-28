@@ -18,7 +18,7 @@ $(document).ready(function () {
 		},
 		github: {
 			org: 'sbcrumb',
-			repo: 'sbcrumb.github.io'
+			repo: 'status'
 		},
 		theme: 'dark'
 	};
