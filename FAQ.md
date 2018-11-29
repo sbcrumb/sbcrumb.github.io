@@ -64,7 +64,7 @@ Also let me know the library you are playing out of Example 4k remux etc to make
 
 *Alternate Method*
 
-You can also hit me up on the discord channl. Allthough not as effective but it will work.
+You can also hit me up on the discord channl. Although not as effective but it will work.
 
 
 
