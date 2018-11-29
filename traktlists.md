@@ -1,6 +1,6 @@
 # Dynamic Library Lists
 
-** Kids TV**
+**Kids TV**
 
 https://trakt.tv/users/crumb4life/lists/kids-tv
 
