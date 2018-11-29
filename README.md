@@ -28,7 +28,16 @@ You can view my profile at [Trakt.tv](https://trakt.tv/users/crumb4life).
 *Full list of places used to generate dynamic libraries*
 [Dynamic Library Lists](/traktlists.md)
 
-## Features
+## Discord Channel
+
+A new but a great place to talk to others members myself. Request Content or Assitance. 
+If you are not sure what discord is here is a link to the discord page.
+
+Discord App [Discord](https://discordapp.com/).
+
+Discord Channel [Crumb Flix] (https://discord.gg/Ycjqxvv).
+
+
 
 
 
