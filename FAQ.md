@@ -43,8 +43,15 @@ Discord App [Discord](https://discordapp.com/).
 Discord Channel [Crumb Flix](https://discord.gg/Ycjqxvv).
 
 
-##
+## Requests
 
+You can go about this only two ways.
+
+My prefered way is to use the website for this. For a few reasons. You will get an email when the item you asked for is actually added into the system. This also allows for rate limits so you don't request a TV show that has been on for 40 years and ask the system to go out and get all 40 years worth. Cause honestly that takes a while.
+
+**Request Site [Ombi](https://kickthetree.com/).**
+
+*Discord Channel* While this works it is not my favorite one. For the reasons above. But if you wish to use it join the channel and follow the directions.
 
 
 
