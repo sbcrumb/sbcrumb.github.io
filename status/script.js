@@ -2,23 +2,31 @@ $(document).ready(function () {
 	var config = {
 		uptimerobot: {
 			api_keys: [
-				'm781387016-b63095074195e998a7b469e5',
-				'',
-				'',
-				'',
-				'',
-				''
+				// Home RDP
+				// Plex
+                                'm781387016-b63095074195e998a7b469e5',
+				'm781387824-6bde8aade28c207a1e7a755b',
+				'm781387750-151cc57d2a2acaf9f8d2627a',
+				'm781387756-e2715419cf515b02a96eef01',
+				'm781387814-b8e7f0dd555795ec0fc6c147',
+				'm781532474-3f45d168db08c2688efbe872',
+				'm781387786-ab5465735cc6d9f73f4376b7',
+				'm781387028-32b976a64eca911162392e21',
+				'm781532478-f341149d03a8272ea971fb12',
+				'm781387789-745767b2cc44b237f3a17341',
+				'm781387845-60f640c749a857c07765c996'
+
 			],
 			logs: 1,
 			response_times: 1,
 			all_time_uptime_ratio: 1,
 			custom_uptime_ratios: "1-7-14-30",
 			response_times_average: 30,
-			response_times_warning: 1500,
+			response_times_warning: 3000,
 		},
 		github: {
 			org: 'sbcrumb',
-			repo: 'status'
+			repo: 'sbcrumb.github.io'
 		},
 		theme: 'dark'
 	};
@@ -28,7 +36,7 @@ $(document).ready(function () {
 		 stylesheet.setAttribute('href', url);
 	}
 
-	if (config.theme == 'dark') {
+	if (config.theme == 'light') {
 		setStyleSheet('style-light.css');
 	}
 
@@ -37,6 +45,7 @@ $(document).ready(function () {
 		'investigating': 'investigating',
 		'major outage': 'outage',
 		'degraded performance': 'degraded',
+		'test paused': 'paused',
 	};
 
 	const monitors = config.uptimerobot.api_keys;
@@ -54,20 +63,24 @@ $(document).ready(function () {
 	}
 
 	function _uptimeRobotSetStatus(check) {
-			check.class = check.status === 2 ? 'label-success' : 'label-danger';
-			check.text = check.status === 2 ? 'operational' : 'major outage';
-			if (check.status !== 2 && !check.lasterrortime) {
-				check.lasterrortime = Date.now();
-			}
-			if (check.status === 2 && Date.now() - (check.lasterrortime * 1000) <= 86400000) {
+		check.class = check.status === 2 ? 'label-success' : 'label-danger';
+		check.text = check.status === 2 ? 'Operational' : 'Major Outage';
+		if (check.status !== 2 && !check.lasterrortime) {
+			check.lasterrortime = Date.now();
+		}
+		if (check.status === 2 && Date.now() - (check.lasterrortime * 1000) <= 86400000) {
 			check.class = 'label-danger';
-			check.text = 'major outage';
+			check.text = 'Major Outage';
 		}
 		if (check.status === 2 && Math.round(check.average_response_time) >= config.uptimerobot.response_times_warning) {
-				check.class = 'label-warning';
-				check.text = 'degraded performance';
-			}
-			return check;
+			check.class = 'label-warning';
+			check.text = 'Degraded Performance';
+		}
+		if (check.status === 0) {
+			check.class = 'label-paused';
+			check.text = 'Test Paused';
+		}
+		return check;
 	}
 
 	function _uptimeRobotSetData(monitor) {
@@ -76,7 +89,7 @@ $(document).ready(function () {
 		const uptimeForever = monitor.all_time_uptime_ratio;
 
 			$('#services').append('<div class="list-group-item">' +
-			'<span class="badge ' + monitor.class + '">' + monitor.text + '</span>' +
+			'<span class="badge ' + monitor.class + '"><b>' + monitor.text + '</span>' +
 			'<a href="#" class="list-group-item-heading" onclick="\$\(\'\#' + monitor.clean_name + '\').toggleClass(\'collapse\');">' + monitor.friendly_name + '</a>' +
 			'<div id="' + monitor.clean_name + '" class="graph collapse">' +
 			'<canvas id="' + monitor.clean_name + '_cvs" width="400" height="150"></canvas>' +
@@ -86,11 +99,13 @@ $(document).ready(function () {
 
 	function _uptimeRobotSetGraph(monitor) {
 			$('#statistics tbody').append('<tr>' +
-			'<td>' + monitor.friendly_name + '</td>' +
+			'<td><b>' + monitor.friendly_name + '</b></td>' +
 			'<td>' + monitor.uptime_ratio[0] + '%</td>' +
 			'<td>' + monitor.uptime_ratio[1] + '%</td>' +
 			'<td>' + monitor.uptime_ratio[2] + '%</td>' +
 			'<td>' + monitor.uptime_ratio[3] + '%</td>' +
+			'<td>' + monitor.uptime_ratio[4] + '%</td>' +
+			'<td>' + monitor.average_response_time + '</td>' +
 			'</tr>');
 
 		const gph_data = {
@@ -99,7 +114,15 @@ $(document).ready(function () {
 				labels: [],
 				datasets: [{
 					label: 'Response Time (ms)',
-				backgroundColor: "rgba(255,255,255,0.5)",
+					lineTension: 0,
+					borderColor: "rgb(255, 214, 51)",
+					borderWidth: 3,
+					pointStyle: 'circle',
+					pointBorderWidth: 1,
+					pointRadius: 5,
+					pointHoverRadius: 7,
+					pointHoverBackgroundColor: "rgba(255, 214, 51)",
+				backgroundColor: "rgb(255, 214, 51,0.5)",
 					data: [],
 				}]
 			},
@@ -113,6 +136,9 @@ $(document).ready(function () {
 					yAxes: [{
 						ticks: {
 							fontColor: '#ddd'
+						},
+						gridLines: {
+							color: "rgb(112,112,112)"
 						}
 					}],
 					xAxes: [{
@@ -120,6 +146,9 @@ $(document).ready(function () {
 						ticks: {
 							display: false,
 							scaleFontSize: 0
+						},
+						gridLines: {
+							color: "rgb(112,112,112)"
 						}
 					}]
 				}
@@ -153,7 +182,7 @@ $(document).ready(function () {
 
 		if (!$('#panel').data('incident')) {
 			$('#panel').attr('class', (status === 'operational' ? 'panel-success' : 'panel-warning') );
-			$('#paneltitle').html(status === 'operational' ? 'All systems are operational.' : 'One or more systems inoperative');
+			$('#paneltitle').html(status === 'operational' ? 'All systems are currently operational.' : 'One or more systems are inoperative');
 		}
 
 		data.monitors.forEach(function (item) {
@@ -166,7 +195,7 @@ $(document).ready(function () {
 	};
 
 	var get_today = new Date();
-	get_today.setDate(get_today.getDate() - 14);
+	get_today.setDate(get_today.getDate() - 30.5);
 	var scope_date = get_today.toISOString();
 
 	$.getJSON('https://api.github.com/repos/' + config.github.org + '/' + config.github.repo + '/issues?state=all&since=' + scope_date).done(GitHubEntry);
@@ -191,7 +220,7 @@ $(document).ready(function () {
 		if (maintainIssues.length > 0) {
 			maintainIssues.forEach(function (issue) {
 				$('#maintenance').append('<div class="list-group-item">' +
-					'<h2 class="list-group-item-heading">' + issue.title + '</h2>' +
+					'<h4 class="list-group-item-heading"><b>' + issue.title + '</b></h4>' +
 					'<p class="list-group-item-text">' + issue.body + '</p>' +
 					'</div>');
 			});
