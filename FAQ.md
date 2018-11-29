@@ -5,7 +5,7 @@ This is a simple FAQ page to answer some basic questions about the Service.
 ## Status Page - This page will give you real time status of services.
 
 
-Status Page [status](https://status.kickthetree.com).
+Status Page [Link](https://status.kickthetree.com).
 
 ### Libraries Explained.
 
@@ -40,7 +40,7 @@ If you are not sure what discord is here is a link to the discord page.
 
 Discord App [Discord](https://discordapp.com/).
 
-Discord Channel [Crumb Flix] (https://discord.gg/Ycjqxvv).
+Discord Channel [Crumb Flix](https://discord.gg/Ycjqxvv).
 
 
 
