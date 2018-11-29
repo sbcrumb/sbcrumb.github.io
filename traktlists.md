@@ -1,12 +1,20 @@
 # Dynamic Library Lists
 
+** Kids TV**
+
 https://trakt.tv/users/crumb4life/lists/kids-tv
 
+**Kids Movies**
+
 https://trakt.tv/users/crumb4life/lists/kids-movies
+
+**TV Shows Trending**
 
 https://trakt.tv/shows/trending
 
 https://trakt.tv/shows/watched/weekly
+
+**Movies Trending**
 
 https://trakt.tv/movies/trending
 
