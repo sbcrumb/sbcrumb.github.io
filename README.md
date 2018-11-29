@@ -1,12 +1,6 @@
-# System Status Page
+# Crumb Flix FAQ
 
-This is a simple status page to show an overview of your sites. The goal here was to create a simple, free, remote monitoring capability. The plan was to create something easily modified for use to show current open issues, setup notices of maintenance windows, and obviously show the current UP status of sites. This work is not originally done by me, but I like to think I've improved on and fixed previous works by others.
-
-This is based off [status](https://github.com/flybaseio/status) by [@flybaseio](https://github.com/flybaseio) which is originally based on [statuspage](https://github.com/jayfk/statuspage) by [@jayfk](https://github.com/jayfk).
-
-Please feel free to fork, modify, and help improve!
-
-Large thanks to [@vertig0ne](https://github.com/vertig0ne) for the help with adapting this. More credit due to him for manipulation of the code so far.
+This is a simple FAQ page to answer some basic questions about the Service.
 
 ## Configuration/Usage
 
