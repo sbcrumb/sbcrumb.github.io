@@ -51,7 +51,20 @@ My prefered way is to use the website for this. For a few reasons. You will get 
 
 **Request Site [Ombi](https://kickthetree.com/).**
 
+If you are going to use the above site. Your login is youur username and password with plex.tv and it is case sensitive on each field. 
+
 *Discord Channel* While this works it is not my favorite one. For the reasons above. But if you wish to use it join the channel and follow the directions.
+
+
+## Problem with a TV Show or Movie. IE the wrong ep. Wrong movie, Language etc.
+
+Best method is to logon to the request site above. Here you can put in your issue which will alert me and I can correct it. 
+If the issue is with a TV show please give me the Season and Episode number.
+Also let me know the library you are playing out of Example 4k remux etc to make sure I correct the right one.
+
+*Alternate Method*
+
+You can also hit me up on the discord channl. Allthough not as effective but it will work.
 
 
 
