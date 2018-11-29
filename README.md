@@ -9,7 +9,9 @@ This is a simple FAQ page to answer some basic questions about the Service.
 **[Remux]** This library contains the highest Quality 1080p possible. These are the same quality as the BluRay disks we buy.
 
 The below libraries are Dynamic and updated every night at midnight. Pulled from various sources like iMDB, and trakt.tv.
-You can view my profile at https://trakt.tv/users/crumb4life and see lists. I believe if you make an account you can also suggest things to be added to each list.
+You can view my profile at https://trakt.tv/users/crumb4life.
+
+[Dynamic Library Lists](/traktlists.md)
 
 **TV - Kids** -- Generated from the Following
 
