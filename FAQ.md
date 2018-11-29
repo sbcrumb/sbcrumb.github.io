@@ -2,7 +2,12 @@
 
 This is a simple FAQ page to answer some basic questions about the Service.
 
-## Libraries Explained.
+## Status Page - This page will give you real time status of services.
+
+
+Status Page [status](https://status.kickthetree.com).
+
+### Libraries Explained.
 
 **[4k]** These are the 4k files, you need a 4k TV and a fast internet connection to access these. (More in a Dedicated Section Below)
 
