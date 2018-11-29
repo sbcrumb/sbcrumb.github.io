@@ -72,10 +72,10 @@ As well as what is being played at that time. You won't be able to see the who j
 
 **Organizr [Organizr](https://organizr.kickthetree.com/).**
 
-#Now Showing Newsletter
+# Now Showing Newsletter
 
 *Each Friday morning around 10am EST time an email is sent out giving you some details as to what was added to the system in terms of movies, tv shows etc. Most watched Show and movie.*
 
-#Custom Notifcations
+# Custom Notifcations
 
-**Do you have a favortie TV Show that you just can't wait to see? Want to be notified when it is grabbed and added? If you do then contact me in Discord or e-mail and I can help get that arranged for you**
+*Do you have a favortie TV Show that you just can't wait to see? Want to be notified when it is grabbed and added? If you do then contact me in Discord or e-mail and I can help get that arranged for you*
