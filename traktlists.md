@@ -22,4 +22,5 @@ https://trakt.tv/movies/watched/weekly
   - https://trakt.tv/users/crumb4life/lists/hallmark-movies
 
 **Seasonal Movie List**
+
 https://trakt.tv/users/crumb4life/lists/christmasmovies
