@@ -9,36 +9,23 @@ This is a simple FAQ page to answer some basic questions about the Service.
 **[Remux]** This library contains the highest Quality 1080p possible. These are the same quality as the BluRay disks we buy.
 
 The below libraries are Dynamic and updated every night at midnight. Pulled from various sources like iMDB, and trakt.tv.
-You can view my profile at https://trakt.tv/users/crumb4life.
+These were added to give suggestions and more of a Netflix Style not sure what to watch. Check out what others are watching.
+Also use the list to locate things you wish to have added.
+You can view my profile at [Trakt.tv](https://trakt.tv/users/crumb4life).
 
 [Dynamic Library Lists](/traktlists.md)
 
-**TV - Kids** -- Generated from the Following
+**TV - Kids** 
 
-> https://trakt.tv/users/crumb4life/lists/kids-tv
+**Movies - Kids** 
 
-**Movies - Kids** -- Generated from the following
+**TV - Trending** 
 
-> https://trakt.tv/users/crumb4life/lists/kids-movies
+**Movies - Trending** 
 
-**TV - Trending** -- Generated from the following
+**Movies - Hallmark** 
 
-> https://trakt.tv/shows/trending
-
-> https://trakt.tv/shows/watched/weekly
-
-
-**Movies - Trending** -- Generated from the following.
-
-> https://trakt.tv/movies/trending
-
-> https://trakt.tv/movies/watched/weekly
-
-**Movies - Hallmark** -- Generated from the following.
-
-> https://trakt.tv/users/crumb4life/lists/hallmark-movies
-
-Movies - Christmas
+**Movies - Christmas**
 
 ## Features
 
