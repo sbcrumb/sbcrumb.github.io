@@ -90,3 +90,4 @@ As well as what is being played at that time. You won't be able to see the who j
 - [ ] Best Players
 - [ ] Speedtests
 - [ ] General Errors and issues.
+- [ ] What Player do you suggest I use/buy?
